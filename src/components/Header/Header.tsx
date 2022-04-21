@@ -8,9 +8,6 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 
-const logo = "https://cdn.dribbble.com/users/5698127/avatars/small/21fc4bf4d140fc80c956784fb686ae1b.png?1629292698"
-
-
 const Header: React.FC = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
@@ -35,9 +32,8 @@ const Header: React.FC = () => {
     return (
         <div
             className={classNames([Styles.Header], 'fixed w-[100%] flex justify-between  top-0 p-[5px]   h-[40px] z-1', {'bg-[#0d0318]': show})}>
-            <img
-                className=' left-0 cursor-pointer  ml-[10px]'
-                src={logo} alt=""/>
+            <h1 className=' left-0 cursor-pointer  ml-[10px] rounded-[50%]'><span
+                className="text-[#5418c5]">Tv</span> Show</h1>
 
             <p className=""/>
             <div className={classNames([Styles.Header_content], 'flex items-center mr-[10px]')}>

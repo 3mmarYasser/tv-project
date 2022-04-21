@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .Header {
   transition-timing-function: ease-in;
   transition: all 0.5s;
+
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+  }
 }
 
-.Header_content {
-
-}
 
 .Header_list {
 
