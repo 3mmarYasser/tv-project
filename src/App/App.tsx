@@ -15,6 +15,7 @@ const App: React.FC = () => {
                 <div>
                     <Routes>
                         <Route index element={<HomeScreen/>}/>
+                        <Route path="*" element={<h1 className="mt-[100px] text-red-700">404 Page</h1>}/>
                     </Routes>
                 </div>
             </Router>

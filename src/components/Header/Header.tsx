@@ -6,7 +6,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import {Link} from "react-router-dom";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Fade from '@mui/material/Fade';
 
 
 const logo = "https://cdn.dribbble.com/users/5698127/avatars/small/21fc4bf4d140fc80c956784fb686ae1b.png?1629292698"
@@ -40,8 +39,8 @@ const Header: React.FC = () => {
                 }}/>
                 <ul className={classNames([Styles.Header_list], "flex list-none items-center text-xs mr-[30px]")}>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/">Movies</Link></li>
-                    <li><Link to="/">About</Link></li>
+                    <li><Link to="/movies">Movies</Link></li>
+                    <li><Link to="/about">About</Link></li>
                 </ul>
 
                 <Avatar alt="Remy Sharp"
