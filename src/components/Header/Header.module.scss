@@ -7,9 +7,13 @@
 
 }
 
-.Header_logo {
-}
+.Header_list {
 
-.Header_avatar {
+  li {
+    margin-left: 10px;
 
+    &:hover {
+      color: #5418c5;
+    }
+  }
 }

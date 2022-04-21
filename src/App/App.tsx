@@ -6,9 +6,10 @@ import Header from "../components/Header/Header";
 import Styles from "./App.module.scss"
 import classNames from "classnames";
 
+
 const App: React.FC = () => {
     return (
-        <div className={classNames([Styles.App], 'overflow-visible')}>
+        <div className={classNames([Styles.App], 'overflow-visible text-white')}>
             <Router>
                 <Header/>
                 <div>
