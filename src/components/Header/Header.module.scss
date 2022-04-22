@@ -10,7 +10,7 @@
   }
 
   @media screen and (max-width: 600px) {
-    .Links {
+    .Links{
       display: none;
     }
     .Menu {
@@ -21,7 +21,43 @@
 
 }
 
-
+.Menu_Links{
+  transition: all 300ms ease-in-out;
+  display: flex !important;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  z-index: 30;
+  .Header_list{
+    flex-direction: column;
+    font-size: 2rem;
+    margin-top: 30px;
+    li{
+      margin-top: 10px;
+    }
+  }
+  button{
+    border-radius: 50%;
+    border: solid red 2px;
+    padding: 5px;
+    transition: all 300ms ease-in-out;
+    &:hover{
+      background-color: red;
+      transform: rotate(180deg);
+    }
+  }
+}
+.Open_Menu{
+  left: 0 !important;
+}
 .Header_list {
 
   li {

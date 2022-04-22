@@ -5,6 +5,7 @@ import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import Header from "../components/Header/Header";
 import Styles from "./App.module.scss"
 import classNames from "classnames";
+import ErrPage from "../screens/ErrPage/ErrPage";
 
 
 const App: React.FC = () => {
@@ -15,7 +16,7 @@ const App: React.FC = () => {
                 <div>
                     <Routes>
                         <Route index element={<HomeScreen/>}/>
-                        <Route path="*" element={<h1 className="mt-[100px] text-red-700">404 Page</h1>}/>
+                        <Route path="*" element={<ErrPage/>}/>
                     </Routes>
                 </div>
             </Router>

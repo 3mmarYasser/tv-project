@@ -9,22 +9,14 @@ import 'swiper/scss';
 const image: string = "https://correcto.id/content/images/usrfile_2020031805552176063.jpg"
 
 interface banner{
-    title:string,
-    desc : string,
-    url  : string,
-    image : string,
 }
 interface Props {
-    banners : banner[]
 }
 
-const Banner: React.FC<Props> = ({banners}) => {
+const Banner: React.FC<Props> = () => {
     const swiper = useSwiper();
 
 
-    const slide = ():ReturnType<any>=>{
-        return <div>Hello</div>
-    }
 
     return (
         <div className={classNames([Styles.Banner])}>

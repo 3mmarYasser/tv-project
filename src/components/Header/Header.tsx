@@ -7,9 +7,11 @@ import {Link} from "react-router-dom";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 
 const Header: React.FC = () => {
+    const [menu, setMenu] = useState <boolean>(false);
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
@@ -39,20 +41,21 @@ const Header: React.FC = () => {
 
             <div className={classNames([Styles.Header_content], 'flex items-center mr-[10px]')}>
 
-                <div className={classNames("flex", [Styles.Links])}>
+                <div className={classNames("flex", [Styles.Links] ,{[Styles.Menu_Links] :menu} )  } >
                     <SearchIcon className="hover:text-[#5418c5]" sx={{
                         color: `white`,
-                        width: 25,
-                        height: 25,
+                        width: `${menu ? '60px' :25}`,
+                        height: `${menu ? '60px' :25}`,
                         cursor: "pointer",
                         marginRight: "20px"
 
                     }}/>
-                    <ul className={classNames([Styles.Header_list], "flex list-none items-center text-1xl mr-[35px]")}>
+                    <ul onClick={()=>setMenu(false)} className={classNames([Styles.Header_list], "flex list-none items-center text-1xl mr-[35px]")}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/movies">Movies</Link></li>
                         <li><Link to="/about">About</Link></li>
                     </ul>
+                    {menu ? <button className="absolute top-[10px] left-[10px]" onClick={()=>setMenu(false)}><CloseIcon/></button> :null}
                 </div>
 
 
@@ -80,7 +83,8 @@ const Header: React.FC = () => {
                     <MenuItem onClick={handleClose}>account</MenuItem>
                     <MenuItem onClick={handleClose}>Logout</MenuItem>
                 </Menu>
-                <div className={classNames("mr-[5px] ml-[20px] cursor-pointer ", [Styles.Menu])}>
+
+                <div className={classNames("mr-[5px] ml-[20px] cursor-pointer ", [Styles.Menu])} onClick={()=>setMenu(true)}>
                     <MenuIcon/>
                 </div>
             </div>
