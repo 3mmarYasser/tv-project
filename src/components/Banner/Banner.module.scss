@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+.Banner {
+
+}
+
+.Banner_contain {
+  background-position: center top;
+  height: 80vh;
+  @media screen and (max-width: 750px) {
+    height: 70vh;
+  }
+  @media screen and (max-width: 500px) {
+    height: 60vh;
+  }
+
+}
+
+.Back_Drop {
+  background: linear-gradient(to left,
+          rgba(13, 3, 24, 1),
+          rgba(13, 3, 24, 1),
+          rgba(13, 3, 24, 0.98),
+          rgba(13, 3, 24, 0.93),
+          rgba(13, 3, 24, 0.84),
+          rgba(13, 3, 24, 0.7),
+          rgba(13, 3, 24, 0.6),
+          rgba(13, 3, 24, 0.5),
+          rgba(38, 4, 75, 0.4),
+          rgba(38, 4, 75, 0.4),
+          rgba(13, 3, 24, 0.5),
+          rgba(13, 3, 24, 0.6),
+          rgba(13, 3, 24, 0.7),
+          rgba(13, 3, 24, 0.84),
+          rgba(13, 3, 24, 0.93),
+          rgba(13, 3, 24, 0.98),
+          rgba(13, 3, 24, 1),
+          rgba(13, 3, 24, 1));
+}
+
+.Banner_Slide_Content {
+  width: calc(100% - 60px);
+}
+
+.Banner_Slide_Head {
+  font-family: 'Raleway', sans-serif;
+  word-break: break-word;
+  text-transform: uppercase;
+
+}
+
+.Banner_Slide_Play {
+  transition: all 300ms ease-in-out;
+  background: linear-gradient(to right, #8f6caa, #5418c5);
+
+  &:hover {
+    background: linear-gradient(to left, #8f6caa, #5418c5);
+    box-shadow: 5px 5px 0 0 #8f6caa,
+    10px 10px 0 0 #5418c5;
+
+  }
+}

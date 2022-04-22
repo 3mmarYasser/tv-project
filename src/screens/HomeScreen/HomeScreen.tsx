@@ -5,6 +5,24 @@ const HomeScreen: React.FC = () => {
     return (
         <div>
             <Banner/>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
+            <h1>test1</h1>
         </div>
     );
 };
