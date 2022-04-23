@@ -3,7 +3,8 @@ import Banner from "../../components/Banner/Banner";
 import {GetTrending} from "./HomeScreen.service";
 
 const HomeScreen: React.FC = () => {
-        const {data} = GetTrending();
+        const {data ,loading} = GetTrending();
+        console.log(loading)
         console.log(data)
     return (
         <div>
