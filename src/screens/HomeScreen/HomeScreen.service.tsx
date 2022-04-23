@@ -1,4 +1,4 @@
-import React , {useEffect , useState} from "react"
+import  {useEffect , useState} from "react"
 import Trending from "../../api/requests/Trending";
 import {BannerResponse, TVShow} from "../../interfaces";
 
