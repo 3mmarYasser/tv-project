@@ -1,5 +1,6 @@
+import {Requests} from "../interfaces";
 const API_KEY = "586fba5759dab044b8c9ff577d204557";
-const AbstractRequests :object ={
+const AbstractRequests:Requests ={
     fetchTrending         : `/trending/all/week?api_key=${API_KEY}&language=en-US`,
     fetchNetflixOriginals : `/discover/tv?api_key=${API_KEY}&with_networks=213`,
     fetchTopRated         : `/movie/top_rated?api_key=${API_KEY}&language=en-US`,

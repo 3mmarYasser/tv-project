@@ -1,7 +1,10 @@
 import React from 'react';
 import Banner from "../../components/Banner/Banner";
+import {GetTrending} from "./HomeScreen.service";
 
 const HomeScreen: React.FC = () => {
+        const {data} = GetTrending();
+        console.log(data)
     return (
         <div>
             <Banner/>
