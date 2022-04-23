@@ -67,27 +67,6 @@
   }
 
   .Banner_content_Right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: 10px;
-    button{
-      border-radius: 50%;
-      border: solid #2a1537 1px;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0{
-        left: 10px;
-        right: 2px;
-      };
-      .NavigateIcons{
-        width: 30px;
-        height: 30px;
-      }
-    }
 
   }
 }
@@ -118,5 +97,49 @@
     box-shadow: 5px 5px 0 0 #8f6caa,
     10px 10px 0 0 #5418c5;
 
+  }
+}
+.Swiper_Banner{
+  position: relative;
+}
+.Banner_navigation{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  z-index: 21;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+  button{
+    transition: all 300ms ease-in-out;
+    border-radius: 50%;
+    border: solid #2a1537 1px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0{
+      left: 10px;
+      right: 2px;
+    };
+    .NavigateIcons{
+      width: 30px;
+      height: 30px;
+    }
+    &:hover{
+      background-color: #2a1537;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    right: 0;
+    bottom: 10px;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    transform: translate(-50% ,0);
   }
 }
