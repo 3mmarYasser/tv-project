@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 
 .Banner {
-
-}
-
-.Banner_contain {
-  background-position: center top;
   height: 80vh;
   @media screen and (max-width: 600px) {
     height: 70vh;
   }
+}
 
-
+.Banner_contain {
+  background-position: center top;
+  @extend .Banner
 }
 
 .Back_Drop {
