@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import classNames from "classnames";
-import Styles from "./Header.module.scss"
 import {Avatar} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import {Link} from "react-router-dom";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Styles from "./Header.module.scss"
+
 
 
 const Header: React.FC = () => {
@@ -37,14 +38,14 @@ const Header: React.FC = () => {
 
             <div className={classNames([Styles.Header_content], 'flex items-center mr-[10px]')}>
                 <SearchIcon className="hover:text-[#5418c5]" sx={{
-                    color: `${show ? 'white' : "#0d0318"}`,
+                    color: 'white',
                     width: 25,
                     height: 25,
                     cursor: "pointer",
                     marginRight: "20px"
 
                 }}/>
-                <ul className={classNames([Styles.Header_list], "flex list-none items-center text-1xl mr-[35px] ", {"text-[#0d0318]": !show})}>
+                <ul className={classNames([Styles.Header_list], "flex list-none items-center text-1xl mr-[35px] ")}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/movies">Movies</Link></li>
                     <li><Link to="/about">About</Link></li>

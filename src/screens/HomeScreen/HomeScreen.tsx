@@ -4,8 +4,6 @@ import {GetTrending} from "./HomeScreen.service";
 
 const HomeScreen: React.FC = () => {
         const {data ,loading ,err} = GetTrending();
-        console.log(data)
-        console.table(data)
     return (
         <div>
             <Banner data={data} loading={loading} err={err}/>

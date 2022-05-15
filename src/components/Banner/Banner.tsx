@@ -82,6 +82,7 @@ const Banner: React.FC<Props> = ({data , loading, err}) => {
             </div>
 
         </Swiper>
+
     }
 
     return (
